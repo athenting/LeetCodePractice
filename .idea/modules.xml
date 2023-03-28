@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/EasyMode/EasyMode.iml" filepath="$PROJECT_DIR$/EasyMode/EasyMode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Easy/Easy.iml" filepath="$PROJECT_DIR$/Easy/Easy.iml" />
       <module fileurl="file://$PROJECT_DIR$/LeetCode.iml" filepath="$PROJECT_DIR$/LeetCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Medium/Medium.iml" filepath="$PROJECT_DIR$/Medium/Medium.iml" />
     </modules>
   </component>
 </project>
