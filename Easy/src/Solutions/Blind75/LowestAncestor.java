@@ -28,7 +28,7 @@ public class LowestAncestor {
         }
 
 
-        findCommonAncestor(root.left, p, q);
+        return findCommonAncestor(root.left, p, q);
     }
 
     //entrance
