@@ -35,7 +35,7 @@ public class LowestAncestor {
     private TreeNode findLowest(TreeNode root, TreeNode p, TreeNode q) {
 
 
-        findCommonAncestor(root, p, q);
+        return findCommonAncestor(root, p, q);
 
     }
 
