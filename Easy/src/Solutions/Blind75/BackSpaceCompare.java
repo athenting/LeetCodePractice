@@ -1,9 +1,7 @@
 package Solutions.Blind75;
 
 import java.util.ArrayDeque;
-import java.util.ArrayList;
 import java.util.Deque;
-import java.util.List;
 
 public class BackSpaceCompare {
 
@@ -17,14 +15,23 @@ public class BackSpaceCompare {
 
         for (char f : first) {
             if (f == '#') {
-                sb1.pop();
+                if (!sb1.isEmpty()) {
+                    sb1.pop();
+                }
             } else {
                 sb1.add(f);
             }
         }
-
-        return true;
-
+        for (char se : second) {
+            if (se == '#') {
+                if (!sb2.isEmpty()) {
+                    sb2.pop();
+                }
+            } else {
+                sb2.add(se);
+            }
+        }
+        return sb1.equals(sb2);
     }
 
 }
