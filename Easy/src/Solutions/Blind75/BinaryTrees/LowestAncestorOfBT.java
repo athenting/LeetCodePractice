@@ -1,4 +1,6 @@
-package Solutions.Blind75;
+package Solutions.Blind75.BinaryTrees;
+
+import Solutions.Blind75.BinaryTrees.TreeNode;
 
 public class LowestAncestorOfBT {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {

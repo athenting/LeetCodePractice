@@ -1,4 +1,4 @@
-package Solutions.Blind75;
+package Solutions.Blind75.BinaryTrees;
 
 public class TreeNode {
     // Definition for a binary tree node.

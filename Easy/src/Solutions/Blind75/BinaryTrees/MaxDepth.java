@@ -1,4 +1,6 @@
-package Solutions.Blind75;
+package Solutions.Blind75.BinaryTrees;
+
+import Solutions.Blind75.BinaryTrees.TreeNode;
 
 public class MaxDepth {
     //基于递归的分治法，将左右两边拆分，然后找出两者的更大的值，+1（根节点自己也算一个节点）

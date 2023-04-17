@@ -1,4 +1,6 @@
-package Solutions.Blind75;
+package Solutions.Blind75.BinaryTrees;
+
+import Solutions.Blind75.BinaryTrees.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
