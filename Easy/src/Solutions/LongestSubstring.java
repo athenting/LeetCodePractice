@@ -1,4 +1,10 @@
 package Solutions;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
+
 /* *
 Given a string s, find the length of the longest substring without repeating characters.
 
@@ -28,21 +34,19 @@ s consists of English letters, digits, symbols and spaces.
 public class LongestSubstring {
 
     public int lengthOfLongestSubstring(String s) {
-        if (s.length() <= 1) {
-            return s.length();
-        }
-        char[] sChar = s.toCharArray();
-        int count = 0;
+        if (s.length()==0) return 0;
 
-        for (int i = 0; i < sChar.length; i++) {
-            for (int j = 1; j < sChar.length-1; j++) {
-                if (sChar[i] != sChar[j]) {
-                    count++;j++;
-            }
 
+        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+        int max=0;
+        for (int i=0, j=0; i<s.length(); ++i){
+            if (map.containsKey(s.charAt(i))){
+                j = Math.max(j,map.get(s.charAt(i))+1);
             }
+            map.put(s.charAt(i),i);
+            max = Math.max(max,i-j+1);
         }
-        return count;
+        return max;
     }
 
 }
